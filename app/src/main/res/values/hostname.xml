@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    All Url's-->
+    <string name="base_url">https://5e99a9b1bc561b0016af3540.mockapi.io/jet2/api/v1/</string>
+</resources>

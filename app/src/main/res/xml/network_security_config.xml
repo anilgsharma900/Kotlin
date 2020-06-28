@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <!-- Official Android N API -->
+    <!--https://android-developers.googleblog.com/2016/07/changes-to-trusted-certificate.html-->
+    <domain-config>
+        <domain includeSubdomains="true">https://5e99a9b1bc561b0016af3540.mockapi.io</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+        <pin-set>
+            <!-- Pin for: currency-converter-demo.pdm.approov.io -->
+            <pin digest="SHA-256">nWFvlx12M290ZBO2sHlnuo/Z8m/8z5yaSynkSG870M0=</pin>
+        </pin-set>
+    </domain-config>
+
+</network-security-config>
