@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jet2tt.articals.databinding.AdapterArticalListBinding
 import com.jet2tt.articals.model.ArticalListModelItem
 import com.jet2tt.articals.util.Util
+import java.util.*
 
 
 /**
@@ -39,10 +40,13 @@ class ArticalAdapter(var articalList: ArrayList<ArticalListModelItem>) :
             binding.artical = artical
             binding.user = artical.user.get(0)
 
-            binding.tvArticalLikes.text = Util().getFormatedNumber(artical.likes.toLong())+" Likes"
-            binding.tvArticalComments.text = Util().getFormatedNumber(artical.comments.toLong())+" Comments"
-//            binding.tvArticalTitle.text = Util().getRelationTime(artical.createdAt.toLong())
+            binding.tvArticalLikes.text =
+                Util().getFormatedNumber(artical.likes.toLong()) + " Likes"
+            binding.tvArticalComments.text =
+                Util().getFormatedNumber(artical.comments.toLong()) + " Comments"
 
+            // get date time in TameAgo
+            binding.tvTime.text = Util().getRelationTime(artical.createdAt)
 
             // load user profile image uisng Glide with Circle shape
             artical.user.get(0).loadImage(binding.ivUserProfile, artical.user.get(0).avatar)
@@ -54,10 +58,10 @@ class ArticalAdapter(var articalList: ArrayList<ArticalListModelItem>) :
                 artical.media.get(0).loadImage(binding.ivArticalImage, artical.media.get(0).image)
 
             }
-            binding.executePendingBindings()
 
             // it will redirect user to browser for displaying URL
             Linkify.addLinks(binding.tvArticalUrl, Linkify.WEB_URLS)
+            binding.executePendingBindings()
 
         }
     }
