@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Articals</string>
-<!--    all Text-->
+    <!--    all Text-->
     <string name="txt_loading_error">An error occured while loading data</string>
     <string name="txt_no_internet">Check internet connection...!!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

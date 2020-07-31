@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/ubuntu/Documents/AndroidProjects/android_apps/Articals/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/ubuntu/Documents/AndroidProjects/android_apps/Articals/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/ubuntu/Documents/AndroidProjects/android_apps/Articals/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/adapter_artical_list.xml",
+        "source": "/home/ubuntu/Documents/AndroidProjects/android_apps/Articals/app/src/main/res/layout/adapter_artical_list.xml"
+    },
+    {
+        "merged": "/home/ubuntu/Documents/AndroidProjects/android_apps/Articals/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_artical_list.xml",
+        "source": "/home/ubuntu/Documents/AndroidProjects/android_apps/Articals/app/src/main/res/layout/fragment_artical_list.xml"
+    }
+]
